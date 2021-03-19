@@ -2,7 +2,8 @@ FROM ubuntu:20.04
 
 LABEL maintainer="Thibaud WILLM"
 
-ARG WWWGROUP
+ENV WWWUSER 1000
+ENV WWWGROUP 1000
 
 WORKDIR /var/www/html
 
